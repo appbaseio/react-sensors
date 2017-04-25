@@ -9,7 +9,7 @@ export default class ReactiveBase extends Component {
 		this.state = {};
 		this.type = this.props.type ? this.props.type : "*";
 		this.appbaseRef = new Appbase({
-			url: "https://scalr.api.appbase.io",
+			url: this.props.url,
 			appname: this.props.app,
 			credentials: this.props.credentials,
 			type: this.type
