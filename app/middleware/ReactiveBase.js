@@ -9,7 +9,7 @@ export default class ReactiveBase extends Component {
 		this.state = {};
 		this.type = this.props.type ? this.props.type : "*";
 		this.appbaseRef = new Appbase({
-			url: this.props.url,
+			url:"http://172.16.230.127:9200",
 			appname: this.props.app,
 			credentials: this.props.credentials,
 			type: this.type
