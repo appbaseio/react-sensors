@@ -4,5 +4,13 @@
 		"stage-0",
 		"react"
 	],
-	"plugins": ["lodash"]
+	"plugins": ["lodash"],
+	"env": {
+		"development": {
+			"plugins": ["transform-es2015-modules-commonjs"]
+		},
+		"test": {
+			"plugins": ["transform-es2015-modules-commonjs"]
+		}
+	}
 }
